@@ -1,8 +1,8 @@
 function makeArray (firstArray, secondArray, maxLength) {
-const thirdArrey = [...firstArray, ...secondArray];
-if (thirdArrey.length > maxLength) {
-return thirdArrey.slice (0, maxLength);
-} else {
+    const thirdArrey = firstArray.concat(secondArray);
+    if (thirdArrey.length > maxLength) {
+        return thirdArrey.slice (0, maxLength);
+    } else {
     return thirdArrey;
 }
 }
